@@ -1,0 +1,9 @@
+databaseChangelog:
+
+
+-include:
+     file: db/changelog/create_persona.yml
+-include:
+     file: db/changelog/create_localidad.yml
+-include: 
+     file: db/changelog/inserts.yml

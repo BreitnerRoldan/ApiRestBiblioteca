@@ -1,0 +1,25 @@
+- changeSet:
+      id: localidad
+      author: breitner.roldan
+      changes:
+      - crateTable:
+        tableName: localidad
+        columns:
+        - column: 
+            name: id
+            type: LONG
+            autoIncrement: true
+            constrains:
+              primaryKey: true
+              nullable: false
+        - column: 
+            name: denominacion
+            type: java.sql.Types.VARCHAR(255) 
+            autoIncrement: true
+            constrains:
+              nullable: false
+        
+              
+              
+                    
+              

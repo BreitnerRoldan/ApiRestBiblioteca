@@ -1,0 +1,32 @@
+databaseChangeLog:
+- changeSet:
+      id: Persona
+      author: breitner.roldan
+      changes:
+      - crateTable:
+        tableName: persona
+        columns:
+        - column: 
+            name: id
+            type: LONG
+            autoIncrement: true
+            constrains:
+              primaryKey: true
+              nullable: false
+        - column: 
+            name: nombre
+            type: java.sql.Types.VARCHAR(255) 
+            autoIncrement: true
+            constrains:
+              unique: true
+              nullable: false
+        - column: 
+            name: apellido
+            type: java.sql.Types.VARCHAR(255) 
+            autoIncrement: true
+            constrains:
+              unique: true
+              nullable: false
+     
+                    
+              
